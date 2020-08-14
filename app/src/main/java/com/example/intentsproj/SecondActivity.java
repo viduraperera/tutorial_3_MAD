@@ -58,7 +58,7 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        Button multiplyButton = (Button) findViewById(R.id.minus);
+        Button multiplyButton = (Button) findViewById(R.id.mul);
         multiplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
