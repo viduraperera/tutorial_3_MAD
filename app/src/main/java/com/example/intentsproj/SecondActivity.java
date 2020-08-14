@@ -48,6 +48,34 @@ public class SecondActivity extends AppCompatActivity {
                 result.setText(no1 + " + " + no2 + " = " + answer);
             }
         });
+        Button minusButton = (Button) findViewById(R.id.minus);
+        minusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer = no1 - no2;
+                textViewAnswer = String.valueOf(answer);
+                result.setText(no1 + " - " + no2 + " = " + answer);
+            }
+        });
 
+        Button multiplyButton = (Button) findViewById(R.id.minus);
+        multiplyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer = no1 * no2;
+                textViewAnswer = String.valueOf(answer);
+                result.setText(no1 + " * " + no2 + " = " + answer);
+            }
+        });
+
+        Button divedButton = (Button) findViewById(R.id.divied);
+        divedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer = no1 / no2;
+                textViewAnswer = String.valueOf(answer);
+                result.setText(no1 + " / " + no2 + " = " + answer);
+            }
+        });
     }
 }
